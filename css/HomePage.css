@@ -24,5 +24,6 @@ li {
     float: left;
     width: 6%;
     border-top: 0px;
+    background-color: white;
     border-bottom: 0px;
 }
