@@ -37,12 +37,79 @@ body {
     margin-left: 50px;
 }
 
+.title {
+    margin-bottom: 300px;
+}
+h2 {
+    text-align: center;
+    top: 0;
+}
+
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
 
+
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+.footer 
+    {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(245,244,244);	
+    color: black;
+    list-style-type: none;
+    text-align: center;
+   }
+
+.social {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #FF0000;
+    color: white
+  }
+
+
+
+
+
+
+
+
+
+
