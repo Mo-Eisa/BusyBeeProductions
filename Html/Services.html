@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Services.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Services.css" />
     <script src="../Javascript/Services.js" defer></script>
     <title>Document</title>
-</head>
-<body>
-<h2>Automatic Slideshow (Merch stuff)</h2>
-<p>Change image every 5 seconds:</p>
-
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-    
-        <img src="../Imgs/img1.png" alt= "img1" style="width:100%">
-        <div class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </div>
-    
-    <div class="mySlides fade">
-        
-        <img src="../Imgs/img2.png" alt= "img2" style="width:100%">
-        <div class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    </div>
-    
-    <div class="mySlides fade">
-        
-        <img src="../Imgs/img3.png" alt= "img3" style="width:100%">
-        <div class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  </head>
+  <body>
+    <div id="main">
+      <h2 href="Services.html">Services</h2>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776;
+      </span>
     </div>
 
-</div>
-<br>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="HomePage.html">Home</a>
+      <a href="Merch.html">Merch</a>
+      <a href="Services.html">Services</a>
+    </div>
 
-<div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-</div>
-    
-</body>
+    <div class="container">
+      <div class="mySlides img1"></div>
+      <div class="mySlides img2"></div>
+      <div class="mySlides img3"></div>
+    </div>
+
+    <br />
+
+    <div class="dots" style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </body>
 </html>
