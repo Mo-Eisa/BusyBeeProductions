@@ -92,6 +92,7 @@ span {
       z-index: -1;
   }
 
+  /* Start of Footer */
   .footer-basic {
     padding:40px 0;
     background-color:#ffffff;
@@ -152,6 +153,7 @@ span {
     color:#aaa;
     margin-bottom:0;
   }
+ /* End of Footer */
 
 .cards {
   display: flex;
