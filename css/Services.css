@@ -41,6 +41,8 @@ span {
   position: relative;
   top: -40px;
   color: black;
+  top: -52px;
+  color: rgba(244,185,64);
 }
 
 .sidenav a:hover {
