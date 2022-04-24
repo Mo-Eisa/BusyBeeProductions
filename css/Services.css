@@ -165,11 +165,22 @@ img {
   cursor: pointer;
 }
 
+.revH{
+  margin-bottom: 20px;
+
+}
+
 .reviews{
   display: flex;
+  height: 200px;
+  overflow-y: scroll;
   flex-direction: row;
   justify-content: center;
   border: 2px solid green;
+}
+
+.review p{
+  margin: 20px;
 }
 
 .active {
