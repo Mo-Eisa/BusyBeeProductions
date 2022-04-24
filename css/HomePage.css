@@ -30,7 +30,7 @@ span {
   float: left;
   position: relative;
   top: -54px;
-  color: white;
+  color: rgba(244,185,64);
 }
 
 .sidenav a:hover {
@@ -53,7 +53,7 @@ span {
 .BusyBeeT {
   text-align: center;
   top: 0;
-  color: white;
+  color: rgba(244,185,64);
   font-family: sans-serif, Arial, Helvetica, sans-serif;
   position: relative;
   left: 14px;
