@@ -7,7 +7,7 @@
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
-  color: rgba(244,185,64);
+  color: rgba(244, 185, 64);
 }
 
 body {
@@ -89,7 +89,7 @@ h2:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .inner-container {
@@ -97,7 +97,7 @@ h2:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 4px solid black;
+  /* border: 4px solid black; */
 }
 
 @media only screen and (max-width: 1440px) {
@@ -151,28 +151,30 @@ img {
   transition: background-color 0.3s ease;
 }
 
-.button-left {
-  height: 100px;
-  width: 25px;
-  cursor: pointer;
-}
-
+.button-left,
 .button-right {
   height: 100px;
   width: 25px;
   cursor: pointer;
+  border: none;
+  margin: 10px;
+  background-color: rgb(244, 185, 64);
 }
 
-.review{
+.button-left:hover {
+  border: none;
+}
+
+.review {
   display: flex;
   height: 200px;
   overflow-y: scroll;
   flex-direction: row;
   justify-content: center;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
-.review p{
+.review p {
   margin: 20px;
 }
 
