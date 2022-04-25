@@ -163,7 +163,7 @@ img {
   cursor: pointer;
 }
 
-
+.review{
   display: flex;
   height: 200px;
   overflow-y: scroll;
