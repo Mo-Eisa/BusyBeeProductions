@@ -43,7 +43,7 @@ span {
   top: -40px;
   color: black;
   top: -52px;
-  color: rgba(244,185,64);
+  color: rgba(244, 185, 64);
 }
 
 .sidenav a:hover {
@@ -73,8 +73,6 @@ h2:hover {
   color: orange;
 }
 
-
-
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -86,13 +84,12 @@ h2:hover {
 
 /* begining of services Homepage content */
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid red;
-
 }
 
 .inner-container {
@@ -104,13 +101,13 @@ h2:hover {
 }
 
 @media only screen and (max-width: 1440px) {
-  .inner-container{
+  .inner-container {
     width: 100%;
   }
-  .container{
+  .container {
     width: 100%;
   }
-  .reviews{
+  .reviews {
     width: 100%;
   }
 }
@@ -154,24 +151,19 @@ img {
   transition: background-color 0.3s ease;
 }
 
-.button-left{
+.button-left {
   height: 100px;
   width: 25px;
   cursor: pointer;
 }
 
-.button-right{
+.button-right {
   height: 100px;
   width: 25px;
   cursor: pointer;
 }
 
-.revH{
-  margin-bottom: 20px;
 
-}
-
-.reviews{
   display: flex;
   height: 200px;
   overflow-y: scroll;
