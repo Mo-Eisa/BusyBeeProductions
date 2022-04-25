@@ -7,6 +7,7 @@
 #main {
   transition: margin-left 0.5s;
   padding: 16px;
+  color: rgba(244,185,64);
 }
 
 body {
@@ -162,11 +163,17 @@ img {
   cursor: pointer;
 }
 
-.reviews {
+
   display: flex;
+  height: 200px;
+  overflow-y: scroll;
   flex-direction: row;
   justify-content: center;
   border: 2px solid green;
+}
+
+.review p{
+  margin: 20px;
 }
 
 .active {
