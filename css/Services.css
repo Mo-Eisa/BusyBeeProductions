@@ -37,6 +37,7 @@ body {
   display: block;
   transition: 0.3s;
 }
+
 span {
   float: left;
   position: relative;
