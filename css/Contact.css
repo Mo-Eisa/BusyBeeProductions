@@ -1,7 +1,15 @@
 /* nav */
 
+#main {
+  display: flex;
+  align-items: center;
+}
+
 .title {
-  text-align: center;
+  margin-left: 50%;
+  color: black;
+  text-transform: uppercase;
+  color: rgba(244, 185, 64);
 }
 
 .sidenav {
@@ -26,9 +34,10 @@
   transition: 0.3s;
 }
 span {
-  float: left;
+  /* float: left;
   position: relative;
-  top: -54px;
+  top: -54px; */
+  margin-left: 20px;
   color: rgba(244, 185, 64);
 }
 
