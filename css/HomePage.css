@@ -30,6 +30,7 @@ span {
   float: left;
   position: relative;
   top: -54px;
+  z-index: 1;
 }
 
 .sidenav a:hover {
