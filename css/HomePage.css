@@ -5,6 +5,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Hamburger Start */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -26,6 +28,7 @@ body {
   display: block;
   transition: 0.3s;
 }
+
 span {
   float: left;
   position: relative;
@@ -44,6 +47,7 @@ span {
   font-size: 36px;
   margin-left: 50px;
 }
+/* Hamburger End */
 
 .title {
   box-sizing: border-box;
@@ -58,6 +62,7 @@ span {
   position: relative;
   left: 14px;
 }
+
 .BusyBeeT:hover {
   opacity: 0.7;
   color: gray;
@@ -120,6 +125,8 @@ h2 {
     margin-top: 10px;
   }
 
+
+
   .video-container video {
     width: 100vw !important;
     height: 100vh !important;
@@ -130,6 +137,8 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* Start of Card Section */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +169,20 @@ h2 {
 .card > h1 {
   text-align: center;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* End of Card Section */
 
 /* Start of Footer */
 .footer-basic {
