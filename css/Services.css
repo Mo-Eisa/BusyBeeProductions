@@ -1,3 +1,7 @@
+:root {
+  --shadow: rgba(0, 0, 0, 0.8)
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,10 +35,13 @@
 
 /* end of logo */
 
-body {
+body  {
   font-family: "Lato", sans-serif;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 0;
+  background-color:  #e9c46a !important;
 }
 
 .sidenav {
@@ -81,165 +88,72 @@ span {
 }
 
 
-
-
-
 /* begining of services Homepage content */
+.slider-container {
+  height: 80vh;
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
 
-.container {
+.slide{
+  max-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid red;  */
-}
-
-.inner-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* border: 4px solid black; */
-}
-
-/* resizing the screen */
-
-@media screen and (max-width: 1440px) {
-  .inner-container {
-    width: 100%;
-  }
-  .container {
-    width: 100%;
-  }
-  .reviews {
-    width: 100%;
-  }
-  .images{
-    height: 150px;
-  }
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  border: 10px solid #111;
-}
-
-.images {
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-.dots {
-  margin-bottom: 20px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  margin-top: 60px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  background-color: rgb(244, 185, 64)
+
+.slide img{
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 50px -1px var(--shadow);
+  border-radius: 4px;
+  user-select: none;
 }
 
-.button-left,
-.button-right {
-  height: 100px;
-  width: 25px;
-  cursor: pointer;
-  border: none;
-  margin: 10px;
-  background-color: rgb(244, 185, 64);
+.grabbing {
+  cursor: grabbing;
 }
 
-.button-left:hover {
-  border: none;
+.grabbing .slide img{
+  transform: scale(0.9);
+  box-shadow: 5px 5px 40px -1px var(--shadow);
+}
+
+
+.revHead{
+
+}
+
+
+.reviews{
+  width: 100%;
 }
 
 .review {
   display: flex;
-  height: 200px;
-  overflow-y: scroll;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  /* border: 2px solid green; */
+  border: 2px solid green; 
 }
 
 .review p {
   margin: 20px;
 }
 
-.active {
-  background-color: #717171;
-}
+@media screen and (max-width: 1440px) {
+  .review{
+    top: 300px;
+  }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 
