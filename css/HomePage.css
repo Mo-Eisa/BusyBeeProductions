@@ -1,12 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: background-color 0.5s;
   margin: 0;
   overflow-x: hidden;
 }
 
-/* Hamburger Start */
+/* header */
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #ffec9f !important;
+  opacity: 0.9;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 810px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #e9c46a;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  header {
+    height: 50px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    margin-top: 5px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  .revHead {
+    margin-top: 90px;
+  }
+  .nav-logo {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+/* Para */
+
+.revHead {
+  margin-top: 90px;
+}
+
+/* Hamburger Start */
+/* 
 .sidenav {
   height: 100%;
   width: 0;
@@ -46,10 +169,10 @@ span {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
+} */
 /* Hamburger End */
 
-.title {
+/* .title {
   box-sizing: border-box;
   margin-bottom: 300px;
 }
@@ -66,19 +189,9 @@ span {
 .BusyBeeT:hover {
   opacity: 0.7;
   color: gray;
-}
+} */
 
-.banner .testimonials {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: -100px;
-}
-
-h2 {
-  text-align: center;
-}
-
-#main {
+/* #main {
   transition: margin-left 0.5s;
   display: flex;
   flex-direction: column;
@@ -101,43 +214,28 @@ h2 {
 .logo-img {
   width: 50px;
   height: 50px;
-}
+} */
 
 .video-container {
   width: 100vw;
-  height: 95vh;
-  margin-top: -10px;
+  height: 100vh;
 }
 
 .video-container video {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   object-fit: cover;
 }
 
-@media screen and (min-height: 450px) {
-  .logo-img {
-    width: 45px;
-    height: 45px;
-  }
-
-  span {
-    width: 45px;
-    height: 45px;
-    margin-top: 10px;
-  }
-
-
-  .video-container video {
-    width: 100vw !important;
-    height: 100vh !important;
-  }
-
+.testimonials {
+  text-align: center;
+  margin-top: 50px;
+  z-index: -1;
 }
 
-.testimonials{
-  margin-top: 70px;
-  margin-bottom: 20px;
+h2 {
+  border-bottom: 5px solid #ffec9f;
+  display: inline;
 }
 
 /* Start of Card Section */
@@ -148,6 +246,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-bottom: 90px;
+  margin-top: 65px;
 }
 
 .card {
@@ -156,6 +255,8 @@ h2 {
   border-radius: 15px;
   box-shadow: 0px 0px 7px 2px rgba(156, 46, 46, 0.15);
   margin-bottom: 10px;
+  z-index: -1;
+  margin-top: -40px;
 }
 
 .card > img {
@@ -168,18 +269,18 @@ h2 {
   text-align: center;
 }
 
-.card > h1 {
+.card > h4 {
   text-align: center;
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
