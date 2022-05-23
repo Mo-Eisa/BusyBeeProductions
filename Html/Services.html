@@ -11,25 +11,23 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="logo">
-        <img class="logo-img" src="../Imgs/Homepage/logoBusyBee.png" alt="" />
-      </div>
-      <div id="main">
-        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-          >&#9776;
-        </span>
-      </div>
-    </div>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a>
-      <a href="HomePage.html">Home</a>
-      <a href="Merch.html">Merch</a>
-      <a href="Services.html">Services</a>
-      <a href="Contact.html">Contact</a>
-    </div>
+    <header class="header">
+      <img class="nav-logo" src="../Imgs/Homepage/logoBusyBee.png" alt="" />
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="Merch.html" class="nav-link">Merch</a>
+          </li>
+          <li class="nav-item">
+            <a href="Services.html" class="nav-link">Services</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <div class="slider-container">
       <div class="slide">
         <img src="/Imgs/Services/For Brands.jpg" href="HomePage.html">
