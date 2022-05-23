@@ -42,19 +42,21 @@ a {
 }
 
 .nav-link:hover {
-  color: gray;
+  color: white;
 }
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: 50px;
-  background-color: red;
+  background-color: rgb(172, 171, 171); opacity: .9;
+  position: fixed;
 }
 
 .nav-menu {
   display: flex;
-  flex-direction: r;
+  flex-direction: row;
 }
 
 .nav-logo {
@@ -69,7 +71,7 @@ a {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #e9c46a;
+    background-color: lightgray;
     width: 100%;
     border-radius: 10px;
     text-align: center;

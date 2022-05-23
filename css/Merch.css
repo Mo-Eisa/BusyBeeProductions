@@ -10,69 +10,109 @@ body {
   overflow-x: hidden;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+li {
+  list-style: none;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+a {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
   display: block;
-  transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
-span {
-  float: left;
-  position: relative;
-  top: -35px;
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 400;
   color: black;
-  top: -52px;
-  color: rgba(244,185,64);
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.nav-link:hover {
+  color: white;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(172, 171, 171); opacity: .9;
+  position: fixed;
 }
 
-.title {
-  box-sizing: border-box;
-  margin-bottom: 300px;
+.nav-menu {
+  display: flex;
+  flex-direction: row;
 }
 
-h2 {
-  text-align: center;
-  top: 0;
-}
-h2:hover {
-  opacity: 0.7;
-  color: gray;
+.nav-logo {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
 }
 
-#main {
-  transition: margin-left 0.5s;
-  padding: 16px;
-  color: rgba(244,185,64);
-}
+@media only screen and (max-width: 810px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .header {
+    height: 50px;
+  }
 
-@media screen and (max-height: 450px) {
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    margin-top: 5px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  .revHead {
+    margin-top: 90px;
+  }
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 45%;
+  }
+
+  .header {
+    flex-direction: row-reverse;
+  }
   .sidenav {
     padding-top: 15px;
   }
@@ -80,6 +120,11 @@ h2:hover {
     font-size: 18px;
   }
 }
+.revHead {
+  margin-top: 90px;
+}
+
+/* End of navbar */
 
 #myVideo {
   margin-top: 100px;
