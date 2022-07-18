@@ -80,6 +80,13 @@ h2 {
   color: white;
 }
 
+.card .first{
+  position: absolute;
+  bottom: 143px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .card {
     width: 390px;
@@ -91,6 +98,11 @@ h2 {
   .card .shadow{
     position: absolute;
     bottom: 19%;
+  }
+
+  .card .first{
+    position: absolute;
+    bottom: 17%;
   }
   .card > img {
     width: 100%;
