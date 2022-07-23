@@ -44,30 +44,31 @@ body {
   align-items: center;
   justify-content: center;
   user-select: none;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 10px rgba(244, 185, 64, .5);
 }
 
-.deHead{
-  font-size: 30px;
-}
 
 .slides img{
   width: 100%;
   height: 100%;
-  box-shadow: 5px 5px 50px -1px var(--shadow);
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
+
 
 .detail{
   width: 100%;
   position: relative;
-  margin-top: -120px;
+  margin-top: -275px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
-  padding: 40px;
-  height: 20%;
+  padding: 20px;
+  height: 275px;
   border-radius: 0px 0px 10px 10px;
+  font-size: 25px;
+}
+.detail h1 {
+  text-align: center;
 }
 
 
@@ -80,16 +81,26 @@ body {
 
 #revContainer{
   color: black;
-  margin: 50px;
-  min-width: 92vw;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  min-width: 90%;
+  height: 125px;
+  border-radius: 10px 10px 10px 10px;
 } 
 
 #rev p{
   margin-left: 12vw;
   width: 70vw;
+  font-size: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+.btn-secondary:hover{
+  color: black !important;
+  background-color: rgb(244, 185, 64, .5) !important;
+}
+
+@media only screen and (max-width: 1600px) {
   .slider-container {
     display: flex;
     scrollbar-width: none;
@@ -99,7 +110,7 @@ body {
   }
   
   .slides{
-    margin: 10px;
+    margin: 20px;
     height: fit-content;
     min-width: 92vw;
     display: flex;
@@ -107,6 +118,7 @@ body {
     align-items: center;
     justify-content: center;
     user-select: none;
+    box-shadow: 0px 0px 10px 10px white;
   }
   
   .deHead{
@@ -116,8 +128,9 @@ body {
   .slides img{
     width: 100%;
     height: 100%;
-    box-shadow: 1px 1px 1px -1px var(--shadow);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 10px rgba(244, 185, 64, .5);
+    margin-bottom: 15px;
   }
   
   .detail{
@@ -130,6 +143,7 @@ body {
     padding: 40px;
     height: 20%;
     border-radius: 0px 0px 10px 10px;
+    font-size: 15px;
   }
   
   
@@ -144,8 +158,15 @@ body {
     color: black;
     margin: 10px;
     min-width: 92vw;
+    margin-bottom: 50px;
   } 
+  #rev p{
+    margin-left: 12vw;
+    width: 70vw;
+    font-size: 20px;
+  }
 }
+
 
 /* Start of Footer */
 .footer-basic {
