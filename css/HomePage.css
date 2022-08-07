@@ -16,7 +16,6 @@ body {
 .nav-link{
   font-size: 18px;
   font-weight: bold;
-  color: rgba(244, 185, 64, 1);
 }
 
 .nav-link :hover{
@@ -65,16 +64,7 @@ body {
 }
 .card .shadow{
   position: absolute;
-  bottom: 225px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  width: 998px;
-  font-size: 40px;
-}
-
-.card .first{
-  position: absolute;
-  bottom: 225px;
+  bottom: 222px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   width: 998px;
@@ -85,19 +75,18 @@ body {
   .card {
     width: 390px;
     height: 500px;
+    font-size: 15px;
   }
   .video-container{
     width: 390px;
   }
   .card .shadow{
     position: absolute;
-    bottom: 19%;
+    bottom: 17%;
+    width: 388px;
+    font-size: 20px;
   }
 
-  .card .first{
-    position: absolute;
-    bottom: 17%;
-  }
   .card > img {
     width: 100%;
     height: 80%;
@@ -173,7 +162,6 @@ body {
   font-size: 24px;
   width: 40px;
   height: 40px;
-  line-height: 40px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
