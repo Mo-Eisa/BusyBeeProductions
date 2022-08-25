@@ -29,13 +29,13 @@ body {
 }
 
 .video-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -56,8 +56,8 @@ body {
 }
 
 .card {
-  width: 1000px;
-  height: 1200px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 0px 10px 10px rgba(244, 185, 64, .5);
   font-size: 30px;
   border: 2px solid red ;
@@ -67,18 +67,13 @@ body {
   bottom: 222px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 998px;
+  width: 100%;
   font-size: 40px;
 }
 
 @media only screen and (max-width: 768px) {
   .card {
-    width: 390px;
-    height: 500px;
     font-size: 15px;
-  }
-  .video-container{
-    width: 390px;
   }
   .card .shadow{
     position: absolute;
