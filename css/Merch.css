@@ -10,13 +10,16 @@ body {
   overflow-x: hidden;
 }
 
-.nav-link{
-  font-size: 18px;
-  font-weight: bold;
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+.navbar-nav > li{
+  margin-right: 1rem;
 
 }
-.nav-link :hover{
-  opacity: 0.5;
+.navbar-toggler{
+  margin-right : 1em;
 }
 
 /* End of navbar */

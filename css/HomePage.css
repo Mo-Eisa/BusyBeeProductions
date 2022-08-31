@@ -1,36 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
   overflow-x: hidden;
-  background-color: black;
 }
 
-.nav-link{
-  font-size: 18px;
-  font-weight: bold;
+.navbar-brand {
+  margin-left: 1rem;
 }
 
-.nav-link :hover{
-  opacity: 1;
+.navbar-nav > li{
+  margin-right: 1rem;
+
+}
+.navbar-toggler{
+  margin-right : 1em;
 }
 
 /* Para */
 
-.revHead {
-  margin-top: 90px;
-}
-
 .video-container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
 }
 
 .video-container video {
@@ -40,14 +37,13 @@ body {
 }
 
 /* Start of Card Section */
+.navbar { margin-top: 0; }
+
 .cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  row-gap: 100px;
   color: black;
 }
 
@@ -58,37 +54,57 @@ body {
 .card {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px 10px rgba(244, 185, 64, .5);
   font-size: 30px;
-  border: 2px solid red ;
 }
-.card .shadow{
+.shadow{
   position: absolute;
-  bottom: 222px;
+  color: white;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  font-size: 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.para{
+
+  font-size: 50px;
+  margin-bottom: 400px;
+}
+
+.shadowv{
+  position: absolute;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   width: 100%;
   font-size: 40px;
 }
 
+
 @media only screen and (max-width: 768px) {
   .card {
     font-size: 15px;
   }
-  .card .shadow{
+.shadow{
     position: absolute;
-    bottom: 17%;
-    width: 388px;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .para{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .shadowv{
+    position: absolute;
+
     font-size: 20px;
   }
 
-  .card > img {
-    width: 100%;
-    height: 80%;
-    margin-bottom: 10px;
-  }
   .card > p {
-    padding-left: 20px;
     text-align: center;
   }
   
@@ -98,14 +114,7 @@ body {
 
 }
 
-
-.card > img {
-  width: 100%;
-  height: 80%;
-  margin-bottom: 10px;
-}
 .card > p {
-  padding-left: 20px;
   text-align: center;
 }
 
@@ -113,6 +122,22 @@ body {
   text-align: center;
 }
 
+.responsiveRapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	position:relative;
+}
+.responsiveRapper iframe,
+.responsiveRapper object,
+.responsiveRapper embed {
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
 
 /* End of Card Section */
 

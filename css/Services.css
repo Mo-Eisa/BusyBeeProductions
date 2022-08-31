@@ -6,24 +6,25 @@
   margin: 0;
   padding: 0;
 }
-
-/* logo stuff*/
-
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
   overflow-x: hidden;
-  background-color: black;
 }
 
-.nav-link{
-  font-size: 18px;
-  font-weight: bold;
+.navbar-brand {
+  margin-left: 1rem;
 }
 
-.nav-link :hover{
-  opacity: 1;
+.navbar-nav > li{
+  margin-right: 1rem;
+
 }
+.navbar-toggler{
+  margin-right : 1em;
+}
+
 
 /* begining of services Homepage content */
 
@@ -191,7 +192,7 @@ body {
 
 
 .btn-secondary{
-  margin-top: 50px;
+  margin-top: 0px;
   color: black !important;
   background-color: rgb(244, 185, 64, .5) !important;
   margin-bottom: 50px;
