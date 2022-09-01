@@ -12,17 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-.navbar-brand {
-  margin-left: 1rem;
-}
 
-.navbar-nav > li{
-  margin-right: 1rem;
-
-}
-.navbar-toggler{
-  margin-right : 1em;
-}
 
 /* Para */
 
@@ -36,9 +26,19 @@ body {
 
 }
 
-/* Start of Card Section */
-.navbar { margin-top: 0; }
+.navbar-brand {
+  margin-left: 1rem;
+}
 
+.navbar-nav > li{
+  margin-right: 1rem;
+
+}
+.navbar-toggler{
+  margin-right : 1em;
+}
+
+/* Start of Card Section */
 .cards {
   display: flex;
   flex-direction: column;
@@ -54,72 +54,61 @@ body {
 .card {
   width: 100%;
   height: 100%;
-  font-size: 30px;
+  align-self: center;
+
 }
+
+
 .shadow{
   position: absolute;
-  color: white;
-  font-size: 60px;
-  width: 100%;
+  top: 50%;
   text-align: center;
-  bottom: 0;
-  width: 100%;
-  font-size: 60px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.para{
-
-  font-size: 50px;
-  margin-bottom: 400px;
-}
-
-.shadowv{
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  width: 100%;
-  font-size: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+}
+
+.shadow .shadowt{
+  font-size: 8vw;
+  margin-top: 10rem;
+}
+
+.shadow p{
+  font-size: 3vw;
 }
 
 
 @media only screen and (max-width: 768px) {
   .card {
-    font-size: 15px;
+      width: 100vw;
+      height: 100vh;
+    
   }
-.shadow{
+  .shadow{
     position: absolute;
-    bottom: 0;
+    top: 60%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
     width: 100%;
-    font-size: 20px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
-  .para{
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
-  .shadowv{
-    position: absolute;
-
-    font-size: 20px;
-  }
-
-  .card > p {
-    text-align: center;
-  }
   
-  .card > h4 {
-    text-align: center;
+  .shadow .shadowt{
+    font-size: 5vw;
   }
 
+
 }
 
-.card > p {
+.Buzzin{
   text-align: center;
-}
-
-.card > h4 {
-  text-align: center;
+  font-size: 5vw;
 }
 
 .responsiveRapper {

@@ -9,7 +9,6 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 17px;
   overflow-x: hidden;
 }
 
@@ -36,163 +35,79 @@ body {
 }
 
 .detail{
-  width: 100%;
-  position: relative;
-  margin-top: -275px;
-  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 82%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding: 20px;
-  height: 275px;
-  font-size: 25px;
+  width: 98vw;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.35);
   border-radius: 0px 0px 10px 10px;
   }
   #img{
-      border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
   }
   
   .detail h1 {
   text-align: center;
+  font-size: 3vw;
+  }
+  .detail p{
+    font-size: 1.5vw;
   }
   
-  .aHead{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 30px;
-  }
   
   #revContainer{
-    color: black;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    min-width: 90%;
-    height: 125px;
-
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 4rem;
+    padding: 2em;
   } 
   
-  #rev p{
-    margin-left: 12vw;
-    width: 70vw;
-    font-size: 45px;
-  }
+
   
-  @media only screen and (max-width: 1650px) {
-    .detail{
-      width: 100%;
-      position: relative;
-      margin-top: -275px;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 20px;
-      height: 275px;
-      font-size: 20px;
-      }
-      .aHead{
-        margin-top: 50px;
-        text-align: center;
-        font-size: 30px;
-      }
-      
-      #revContainer{
-        color: black;
-        margin: 10px;
-        min-width: 92vw;
-        margin-bottom: 50px;
-      } 
-      #rev p{
-        width: 70vw;
-        font-size: 30px;
-      }
 
-  }
-
-
-  @media only screen and (max-width: 1100px) {
-    .detail{
-      width: 100%;
-      position: relative;
-      margin-top: 0px;
-      background: white;
-      color: black;
-      width: 100%;
-      padding: 40px;
-      height: 20%;
-      border-radius: 0px 0px 10px 10px;
-      font-size: 15px;
-      }
-
-      .aHead{
-        margin-top: 50px;
-        text-align: center;
-        font-size: 30px;
-      }
-      
-      #revContainer{
-        color: black;
-        margin: 10px;
-        min-width: 92vw;
-        margin-bottom: 50px;
-      } 
-      #rev p{
-        margin-left: 12vw;
-        width: 70vw;
-        font-size: 25px;
-      }
-      #img{
-        border-radius: 10px 10px 0px 0px;
-    }
-  }
-  
   @media only screen and (max-width: 767px) {
   .detail{
-      width: 100%;
-      position: relative;
-      margin-top: 0px;
-      background: white;
-      color: black;
-      width: 100%;
-      padding: 40px;
-      height: 20%;
-      border-radius: 0px 0px 10px 10px;
-      font-size: 15px;
+    position: relative;
+    left: 50%;
+    color: white;
+    width: 98vw;
+    padding: 1em;
+    color: black;
+    background: none;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 8rem;
   }
-  .aHead{
-    margin-top: 50px;
+  .detail h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 5vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    }
+    .detail p{
+      font-size: 3vw;
+    }
+
+  #revContainer{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 2vh;
+    padding: 2em;
   }
   
-  #revContainer{
-    color: black;
-    margin: 10px;
-    min-width: 92vw;
-    margin-bottom: 50px;
-  } 
-  #rev p{
-    margin-left: 12vw;
-    width: 70vw;
-    font-size: 20px;
-  }
-  #img{
-    border-radius: 10px 10px 0px 0px;
-}
+
+
 }
 
-@media only screen and (max-width: 460px) {
-  #rev p{
-    margin-left: 12vw;
-    width: 70vw;
-    font-size: 17px;
-  }
-  #img{
-    border-radius: 10px 10px 0px 0px;
-
-  }
-}
 
 
 .btn-secondary{
-  margin-top: 0px;
+  margin-top: 1vh;
   color: black !important;
   background-color: rgb(244, 185, 64, .5) !important;
   margin-bottom: 50px;
