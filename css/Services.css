@@ -9,7 +9,10 @@ body {
 
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  color: gray;
+  background-color:  #2f2f2f !important;
+}
+.navbar{
+  background-color: white !important;
 }
 
 .navbar-brand {
@@ -54,14 +57,16 @@ body {
   }
   .detail p{
     font-size: 1.5vw;
+    height: 10vh;
   }
   
   #revContainer{
-    margin-top: 2rem;
+    margin: 8rem;
     text-align: center;
     font-size: 2vw;
-    margin-bottom: 4rem;
     padding: 2em;
+    height: 4vh;
+    color: white;
   } 
   
   @media only screen and (max-width: 767px) {
@@ -71,7 +76,7 @@ body {
     color: white;
     width: 98vw;
     padding: 1em;
-    color: black;
+    color: white;
     background: none;
     border-radius: 10px 10px 10px 10px;
     margin-top: 8rem;
@@ -87,11 +92,11 @@ body {
     }
 
   #revContainer{
-    margin-top: 2rem;
     text-align: center;
     font-size: 4vw;
-    margin-bottom: 2vh;
+    margin: 2rem;
     padding: 2em;
+    height: 20vh;
   }
   
 }
