@@ -72,13 +72,16 @@ body {
 
 .shadow .shadowt{
   font-size: 8vw;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .shadow p{
   font-size: 3vw;
 }
 
+.icon{
+  width: 8rem;
+}
 
 @media only screen and (max-width: 768px) {
   .card {
@@ -88,7 +91,7 @@ body {
   }
   .shadow{
     position: absolute;
-    top: 60%;
+    top: 50%;
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -101,8 +104,12 @@ body {
   
   .shadow .shadowt{
     font-size: 5vw;
+    margin-top: 2rem;
   }
 
+  .icon{
+    width: 2rem;
+  }
 
 }
 
