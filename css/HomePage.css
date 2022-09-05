@@ -68,19 +68,22 @@ body {
   color: white;
   background: rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
+  width: 100%;
+
 }
 
 .shadow .shadowt{
   font-size: 8vw;
-  margin-top: 5rem;
 }
 
 .shadow p{
   font-size: 3vw;
+
 }
 
 .icon{
   width: 8rem;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
