@@ -8,14 +8,17 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 17px;
   overflow-x: hidden;
 }
 
 
 
 /* Para */
-
+.navbar {
+  background-color: rgb(14, 14, 14) !important;
+  color: white !important;
+  margin-top: 0 !important;
+}
 .video-container {
   width: 100vw;
 }
@@ -23,11 +26,12 @@ body {
 .video-container video {
   width: 100%;
   height: 100%;
-
+  margin-bottom: 0;
 }
 
 .navbar-brand {
   margin-left: 1rem;
+  
 }
 
 .navbar-nav > li{
@@ -36,6 +40,11 @@ body {
 }
 .navbar-toggler{
   margin-right : 1em;
+  background-color: #e1b804 !important;;
+  color: white !important;
+}
+.nav-link{ 
+  color: #e1b804 !important;
 }
 
 /* Start of Card Section */
