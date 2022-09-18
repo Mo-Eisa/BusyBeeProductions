@@ -66,7 +66,7 @@ body {
   }
   .detail p{
     font-size: 1.5vw;
-    height: 10vh;
+    height: 27vh;
   }
   
   #revContainer{
@@ -93,7 +93,7 @@ body {
   .detail h1 {
     text-align: center;
     font-size: 5vw;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     }
     .detail p{
