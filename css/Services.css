@@ -1,15 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&family=Josefin+Sans:wght@700&family=Raleway&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-
-  font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  background-color:  #2f2f2f !important;
+  background-color:  rgb(14, 14, 14) !important;
 }
 
 .navbar {
@@ -34,6 +31,8 @@ body {
 }
 .nav-link{ 
   color: #e1b804 !important;
+  font-size: 2vw !important; 
+  font-family: 'Darker Grotesque', sans-serif !important;
 }
 
 /* begining of services Homepage content */
@@ -54,19 +53,23 @@ body {
   width: 98vw;
   padding: 1em;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 10px 10px 10px 10px;
   }
+  
   #img{
     border-radius: 10px 10px 10px 10px;
   }
   
   .detail h1 {
+  color: #e1b804;
   text-align: center;
   font-size: 3vw;
+  font-family: 'Josefin Sans', sans-serif;
   }
   .detail p{
     font-size: 1.5vw;
     height: 27vh;
+    font-family: 'Raleway', sans-serif;
+
   }
   
   #revContainer{
@@ -85,10 +88,13 @@ body {
     color: white;
     width: 98vw;
     padding: 1em;
-    color: white;
     background: none;
     border-radius: 10px 10px 10px 10px;
     margin-top: 8rem;
+  }
+  .nav-link{ 
+    color: #e1b804 !important;
+    font-size: 5vw !important; 
   }
   .detail h1 {
     text-align: center;
@@ -99,6 +105,7 @@ body {
     .detail p{
       font-size: 3vw;
       height: 10vh;
+      
     }
 
   #revContainer{
@@ -130,10 +137,10 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.6;
   margin-bottom: 0;
-  
+  font-family: 'Darker Grotesque', sans-serif !important;
 }
 
 .footer-basic li {
@@ -157,6 +164,7 @@ body {
 
 .footer-basic .social > a {
   font-size: 24px;
+  font-family: 'Darker Grotesque', sans-serif !important;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -175,7 +183,8 @@ body {
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size:20px;
   color: #e1b804;
   margin-bottom: 0;
+  font-family: 'Darker Grotesque', sans-serif !important;
 }

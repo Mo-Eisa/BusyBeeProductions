@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700&family=Josefin+Sans:wght@700&family=Raleway&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Darker Grotesque', sans-serif !important;
   overflow-x: hidden;
   background-color:  #2f2f2f !important;
 }
@@ -48,6 +47,7 @@ body {
 }
 .nav-link{ 
   color: #e1b804 !important;
+  font-size: 2vw !important; 
 }
 
 /* Start of Card Section */
@@ -59,15 +59,12 @@ body {
   color: black;
 }
 
-
-
 .card {
   width: 100%;
   height: 100%;
   align-self: center;
 
 }
-
 
 .shadow{
   position: absolute;
@@ -79,22 +76,29 @@ body {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
   width: 100%;
-
-}
-
-.shadow .shadowt{
-  font-size: 8vw;
 }
 
 .shadow p{
-  font-size: 3vw;
+  font-size: 4vw;
+  margin-top: 15vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+div.a {
+  text-indent: 50px;
+}
+
+.Buzzin {
+  color: #e1b804;
+  margin-top: 1rem;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-size: 6vw;
+  font-family: 'Darker Grotesque', sans-serif;  
+  font-weight: 700;
 
 }
 
-.icont{
-  width: 8rem;
-  display: inline-block;
-}
 
 @media only screen and (max-width: 768px) {
   .card {
@@ -102,28 +106,34 @@ body {
       height: 100vh;
     
   }
+  
+  .nav-link{ 
+    color: #e1b804 !important;
+    font-size: 5vw !important; 
+  }
+
   .shadow{
     position: absolute;
     top: 50%;
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4vw;
     color: white;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
   }
+  div.a {
+    text-indent: 20px;
+  }
+  .shadow p{
+    font-size: 4vw;
+    margin-top: 5vh;
+  }
+  .Buzzin{
+    font-size: 10vw !important;
+  }
   
-  .shadow .shadowt{
-    font-size: 5vw;
-    margin-top: 2rem;
-  }
-
-  .icont{
-    width: 2rem;
-  }
-
 }
 
 
@@ -143,12 +153,9 @@ body {
 	position:absolute;
 }
 
-.Buzzin{
-  color: white;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 5vw;
-}
+
+  
+
 
 /* End of Card Section */
 
@@ -164,7 +171,7 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.6;
   margin-bottom: 0;
   
@@ -209,7 +216,7 @@ body {
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size:20px;
   color: #e1b804;
   margin-bottom: 0;
 }
