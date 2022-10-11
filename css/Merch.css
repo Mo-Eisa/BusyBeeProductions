@@ -54,11 +54,13 @@ body {
   color: #f1f1f1;
   width: 100%;
   padding: 40px;
+  user-select:none;
 }
 
 .content p {
   margin-bottom: 50px;
   margin-top: 30px;
+  user-select:none;
 }
 
 .buy-now {
@@ -117,6 +119,7 @@ body {
   line-height: 1.6;
   margin-bottom: 0;
   font-family: 'Darker Grotesque', sans-serif !important;
+  user-select:none;
 }
 
 .footer-basic li {
@@ -127,6 +130,7 @@ body {
   color: #e1b804;
   text-decoration: none;
   opacity: 0.8;
+  user-select:none;
 }
 
 .footer-basic ul a:hover {
@@ -150,6 +154,7 @@ body {
   margin: 8px;
   color: inherit;
   opacity: 0.75;
+  user-select:none;
 }
 
 .footer-basic .social > a:hover {
@@ -163,4 +168,5 @@ body {
   color: #e1b804;
   margin-bottom: 0;
   font-family: 'Darker Grotesque', sans-serif !important;
+  user-select:none;
 }

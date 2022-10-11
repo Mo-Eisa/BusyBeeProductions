@@ -82,10 +82,12 @@ body {
   font-size: 4vw;
   margin-top: 15vh;
   font-family: 'Raleway', sans-serif;
+  user-select:none;
 }
 
 div.a {
   text-indent: 50px;
+  user-select:none;
 }
 
 .Buzzin {
@@ -96,7 +98,7 @@ div.a {
   font-size: 6vw;
   font-family: 'Darker Grotesque', sans-serif;  
   font-weight: 700;
-
+  user-select:none;
 }
 
 
@@ -185,6 +187,7 @@ div.a {
   color: #e1b804;
   text-decoration: none;
   opacity: 0.8;
+  user-select:none;
 }
 
 .footer-basic ul a:hover {
@@ -219,4 +222,5 @@ div.a {
   font-size:20px;
   color: #e1b804;
   margin-bottom: 0;
+  user-select:none;
 }

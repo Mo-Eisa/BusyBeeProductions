@@ -64,12 +64,13 @@ body {
   text-align: center;
   font-size: 3vw;
   font-family: 'Josefin Sans', sans-serif;
+  user-select:none;
   }
   .detail p{
     font-size: 1.5vw;
     height: 27vh;
     font-family: 'Raleway', sans-serif;
-
+    user-select:none;
   }
   
   #revContainer{
@@ -79,6 +80,7 @@ body {
     padding: 2em;
     height: 4vh;
     color: white;
+    user-select:none;
   } 
   
   @media only screen and (max-width: 767px) {
@@ -151,6 +153,7 @@ body {
   color: #e1b804;
   text-decoration: none;
   opacity: 0.8;
+  user-select:none;
 }
 
 .footer-basic ul a:hover {
@@ -174,6 +177,7 @@ body {
   margin: 8px;
   color: inherit;
   opacity: 0.75;
+  user-select:none;
 }
 
 .footer-basic .social > a:hover {
@@ -187,4 +191,5 @@ body {
   color: #e1b804;
   margin-bottom: 0;
   font-family: 'Darker Grotesque', sans-serif !important;
+  user-select:none;
 }
