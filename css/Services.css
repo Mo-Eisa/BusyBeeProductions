@@ -120,11 +120,16 @@ body {
   
 }
 
+.d-gridgap-2{
+  text-align: center;
+
+}
 .btn-secondary{
   margin-top: 1vh;
   color: black !important;
   background-color: rgb(244, 185, 64, .5) !important;
-  margin-bottom: 50px;
+  margin-bottom: 1vh;
+  text-align: center;
 }
 
 /* Start of Footer */
